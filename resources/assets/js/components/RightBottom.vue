@@ -4,14 +4,14 @@
             {{ $L('使用 SSO 登录') }}
         </div>
         <template v-if="showDown">
-            <a v-if="downloadUrl" class="common-right-bottom-link" :href="downloadUrl" target="_blank">
+<!--            <a v-if="downloadUrl" class="common-right-bottom-link" :href="downloadUrl" target="_blank">
                 <Icon type="md-download"/>
                 {{ $L('客户端下载') }}
             </a>
             <div v-else-if="updateVersion && updateBottomShow && $Electron" class="common-right-bottom-link" @click="updateShow=true">
                 <Icon type="md-download"/>
                 {{ $L('更新客户端') }}
-            </div>
+            </div>-->
         </template>
         <a v-if="showPrivacy" class="common-right-bottom-link" target="_blank" :href="$A.apiUrl('privacy')">
             《{{ $L('隐私政策') }}》
